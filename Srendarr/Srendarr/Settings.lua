@@ -764,8 +764,11 @@ local function ConfigurePanelDisplayFrame(fromStyleFlag)
                 groupText = strformat('%s |cffd100%s|r,', groupText, L.Group_RaidDebuffs)
                 noGroups = false
             elseif (frame == currentDisplayFrame) then -- this group is being show on this frame
-                groupText = strformat('%s |cffd100%s|r,', groupText, Srendarr.auraGroupStrings[group])
-                noGroups = false
+                local groupName = Srendarr.auraGroupStrings[group]
+                if groupName then
+                    groupText = strformat('%s |cffd100%s|r,', groupText, groupName)
+                    noGroups = false
+                end
             end
         end
 

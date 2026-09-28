@@ -42,8 +42,8 @@ local ZOSName = function (abilityID) return zo_strformat('<<t:1>>', GetAbilityNa
 
 Srendarr.name = 'Srendarr'
 Srendarr.slash = '/srendarr'
-Srendarr.version = '2.5.50'
-Srendarr.addonVersion = 2550
+Srendarr.version = '2.5.51'
+Srendarr.addonVersion = 2551
 Srendarr.fversion = 2.549
 Srendarr.versionDB = 3
 
